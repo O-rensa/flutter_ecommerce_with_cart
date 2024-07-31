@@ -1,3 +1,5 @@
+import 'package:ecommerce_with_cart/pages/intro_page.dart';
+import 'package:ecommerce_with_cart/themes/light_mode.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +12,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: IntroPage(),
+      theme: lightMode,
+    );
   }
 }
