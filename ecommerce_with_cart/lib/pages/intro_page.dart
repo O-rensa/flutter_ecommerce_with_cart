@@ -14,7 +14,10 @@ class IntroPage extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
         child: Column(
+          // styling
           mainAxisAlignment: MainAxisAlignment.center,
+
+          // elements 
           children: [
           // logo
           Icon(
@@ -26,7 +29,7 @@ class IntroPage extends StatelessWidget {
           const SizedBox(height: 10,), // just to add space
         
           // title
-          Text(
+          const Text(
             "The Grey Shop",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -48,8 +51,8 @@ class IntroPage extends StatelessWidget {
 
           // button
           IntroButton(
-            onTap: () {}, 
-            child: Icon(Icons.arrow_forward),
+            onTap: () => Navigator.pushNamed(context, '/shop_page'), 
+            child: const Icon(Icons.arrow_forward),
             )
         ],),
       )
